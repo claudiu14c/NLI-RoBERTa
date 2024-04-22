@@ -30,3 +30,17 @@ Post fine-tuning, the model has been stored on the Cloud at [this location](http
 *   The fine-tuned model is currently loaded from Google Drive. If one wants to test this notebook, please download the model from [here](https://drive.google.com/file/d/1-IJSt2HGH9Dqbu6NBuHr61ndV1r4g-3H/view?usp=sharing) and change the content of the variable *PATH* to the location of the downloaded model.
 * The usage of a GPU runtime is encouraged for large test files, but it is not needed for less than 1000 test samples.
 
+
+# Results
+After fine-tuning the model on a set of 26k premise-hypothesis pairs, the following results were obtained on the validation set (6k pairs):
+| Metric     | Value  |
+|------------|--------|
+| Accuracy   | 88.21  |
+| Macro-P    | 88.25  |
+| Macro-R    | 88.16  |
+| Macro-F1   | 88.19  |
+| W Macro-P  | 88.23  |
+| W Macro-R  | 88.21  |
+| W Macro-F1 | 88.21  |
+| MCC        | 76.41  |
+
